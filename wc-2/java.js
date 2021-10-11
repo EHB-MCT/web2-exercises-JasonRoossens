@@ -1,7 +1,9 @@
+import Team from 'team.js'
 "use strict"
 
 let list = [];
 let pokemons = [];
+
 fetch('https://pokeapi.co/api/v2/pokemon?limit=151')
     .then(response => response.json())
     .then(data => {
